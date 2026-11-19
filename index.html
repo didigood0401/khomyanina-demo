@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Надежда Хомянина - психолог по профессиональной реализации</title>
+<meta name="description" content="Выстраиваю профессиональную реализацию как управляемый проект: от ясности в ценностях к устойчивым результатам.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFFFFF;--beige:#F5F0E8;--txt:#2C2C2C;--mut:#6E6A64;--blue:#1F3A5F;--car:#C9A87C;--line:#E4DCCF;--dark:#1E1B18}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--txt);font:400 17px/1.6 Inter,system-ui,sans-serif;-webkit-tap-highlight-color:transparent}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+h1,h2,h3,.serif{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;letter-spacing:-.005em;line-height:1.12}
+h1{font-size:40px}
+h2{font-size:28px;margin-bottom:16px}
+h2::after{content:"";display:block;width:40px;height:2px;background:var(--car);margin-top:14px}
+h3{font-size:22px}
+p+p{margin-top:16px}
+section{padding:56px 0}
+.mut{color:var(--mut)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:54px;padding:0 28px;background:var(--blue);color:#fff;border:0;border-radius:4px;font:600 16px Inter;text-decoration:none;cursor:pointer;transition:background .2s,transform .15s}
+.btn:hover{background:#18304f}.btn:active{transform:scale(.98)}
+.btn.sec{background:var(--txt)}
+.btn svg{transition:transform .2s}.btn:hover svg{transform:translateX(3px)}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+.top.sc{border-color:var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--txt)}
+.mono{width:38px;height:38px;border:1px solid var(--txt);display:grid;place-items:center;font:600 17px "Cormorant Garamond",serif;letter-spacing:.04em}
+.logo b{display:block;font:600 15px Inter;line-height:1.2}
+.logo small{display:block;font-size:11.5px;color:var(--mut);line-height:1.2}
+.nav{display:none;gap:28px}
+.nav a{color:var(--txt);text-decoration:none;font-size:14px;position:relative}
+.nav a::after{content:"";position:absolute;left:0;bottom:-4px;height:1px;width:0;background:var(--car);transition:width .25s}
+.nav a:hover::after{width:100%}
+
+/* hero */
+.hero{padding:0 0 40px}
+.hero .ph{position:relative;margin:0 -20px;aspect-ratio:4/4.3;overflow:hidden;clip-path:polygon(0 0,100% 0,100% 92%,0 100%)}
+.hero .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;transform:scale(1.06);transition:transform 2.2s cubic-bezier(.2,.7,.2,1)}
+.loaded .hero .ph img{transform:scale(1)}
+.badge{position:absolute;right:0;bottom:16%;background:var(--blue);color:#fff;font-size:13px;padding:9px 16px;letter-spacing:.02em}
+.over{margin-top:26px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+.hero h1{margin-top:12px}
+.hero h1 em{font-style:italic;font-weight:500;display:block}
+.offer{margin-top:16px;font-size:18px;color:#45423e}
+.hero .btn{margin-top:26px;width:100%}
+.geo{margin-top:12px;font-size:13px;color:var(--mut)}
+.ticks{margin-top:30px;display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+.tick{background:#fff;padding:18px 18px 18px 52px;position:relative}
+.tick::before{content:"";position:absolute;left:18px;top:21px;width:20px;height:20px;border:1px solid var(--car);border-radius:50%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M6 10.3l2.7 2.6L14 7.6' fill='none' stroke='%23C9A87C' stroke-width='1.6'/%3E%3C/svg%3E") center/contain}
+.tick b{display:block;font-size:16px}
+.tick span{font-size:15px;color:var(--mut)}
+.formula{margin-top:20px;background:var(--blue);color:#fff;padding:22px 22px 18px}
+.formula .row{display:flex;justify-content:space-between;align-items:baseline;font:600 24px "Cormorant Garamond",serif}
+.formula .row i{font-style:normal;color:var(--car);font-size:18px}
+.track{position:relative;margin-top:18px;height:2px;background:rgba(255,255,255,.35)}
+.track i{position:absolute;left:0;top:0;height:2px;background:#fff;width:0;transition:width 1.6s ease .4s}
+.loaded .track i{width:100%}
+.steps{display:flex;justify-content:space-between;margin-top:-7px}
+.steps span{font-size:12.5px;display:flex;flex-direction:column;align-items:center;gap:8px}
+.steps span:first-child{align-items:flex-start}.steps span:last-child{align-items:flex-end}
+.steps span::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--blue);border:2px solid #fff}
+
+/* states */
+.states{background:var(--beige)}
+.cards4{display:grid;gap:12px;margin-top:28px}
+.st{background:#fff;padding:24px;position:relative;cursor:pointer;transition:box-shadow .25s}
+.st .n{font:600 14px "Cormorant Garamond",serif;color:var(--car);letter-spacing:.1em}
+.st h3{margin:6px 0 10px}
+.st p{font-size:15.5px;color:#4a4742}
+.st .mark{position:absolute;right:20px;top:22px;width:26px;height:26px;border:1px solid var(--line);border-radius:50%;transition:.25s}
+.st.on{box-shadow:inset 0 0 0 1.5px var(--blue)}
+.st.on .mark{background:var(--blue);border-color:var(--blue);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Cpath d='M8 13.3l3.4 3.2L18 10' fill='none' stroke='white' stroke-width='1.8'/%3E%3C/svg%3E")}
+.hint{font-size:13px;color:var(--mut);margin-top:14px}
+.outro{margin-top:28px;padding:28px 24px;background:var(--txt);color:#fff}
+.outro .serif{font-size:26px;font-weight:600}
+.outro p{color:#d9d4cc;margin-top:12px;font-size:16px}
+.outro .sel{margin-top:14px;font-size:14px;color:var(--car);min-height:1.2em}
+.outro .btn{margin-top:20px;width:100%;background:#fff;color:var(--txt)}
+
+/* about */
+.about .grid{display:grid;gap:28px}
+.about .ph{position:relative}
+.about .ph img{width:100%;aspect-ratio:4/4.6;object-fit:cover;object-position:50% 20%}
+.about .ph::after{content:"";position:absolute;inset:14px -10px -10px 14px;border:1px solid var(--car);z-index:-1}
+.about .who{font-size:15px;color:var(--mut);margin-top:-6px}
+.reg{list-style:none;margin:20px 0;display:grid;gap:12px}
+.reg li{padding-left:30px;position:relative;font-size:16px}
+.reg li::before{content:"";position:absolute;left:0;top:4px;width:18px;height:18px;border:1px solid var(--car);border-radius:50%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M6 10.3l2.7 2.6L14 7.6' fill='none' stroke='%23C9A87C' stroke-width='1.6'/%3E%3C/svg%3E") center/contain}
+blockquote{border-left:2px solid var(--car);padding:4px 0 4px 18px;font:italic 500 21px/1.45 "Cormorant Garamond",serif;color:#3a3734;margin:22px 0 24px}
+.about .btn{width:100%}
+
+/* foundation */
+.found .cards{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:26px}
+.fc{border:1px solid var(--line);padding:20px 16px}
+.fc svg{width:30px;height:30px;stroke:var(--car);fill:none;stroke-width:1.3}
+.fc h3{font-size:19px;margin:12px 0 6px}
+.fc p{font-size:13.5px;line-height:1.5;color:var(--mut)}
+.sum{margin-top:22px;font-size:16px;padding:20px;background:var(--beige)}
+.sum b{font-weight:600}
+
+/* method */
+.method{background:var(--beige)}
+.venn{margin:30px auto 0;max-width:620px;position:relative}
+.venn svg{width:100%;height:auto;overflow:visible}
+.venn .c{fill:rgba(255,255,255,.55);stroke:var(--txt);stroke-width:1;transition:fill .4s}
+.venn .lens{fill:var(--blue);opacity:.92}
+.venn text{font-family:Inter;fill:var(--txt)}
+.venn .t1{font:700 22px "Cormorant Garamond",serif}
+.venn .t2{font-size:11.5px;fill:var(--mut)}
+.venn .pain{font-size:12px;fill:#8b857c;transition:opacity .5s}
+.venn .strike{stroke:var(--car);stroke-width:1.4;stroke-dasharray:80;stroke-dashoffset:80;transition:stroke-dashoffset .6s ease}
+.venn.go .strike{stroke-dashoffset:0}
+.venn.go .pain{opacity:.45}
+.venn .core{fill:#fff;font:700 13px Inter;letter-spacing:.06em}
+.lvl{display:grid;gap:12px;margin-top:22px}
+.lv{background:#fff;padding:20px}
+.lv small{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--car)}
+.lv h3{font-size:21px;margin:4px 0 8px}
+.lv .pains{font-size:14px;color:var(--mut)}
+.lv .pains s{text-decoration-color:var(--car);text-decoration-thickness:1.5px}
+.eq{text-align:center;margin-top:26px;font:italic 600 34px "Cormorant Garamond",serif;color:var(--blue)}
+
+/* formats */
+.fmts{display:grid;gap:16px;margin-top:28px}
+.fm{padding:28px 24px;display:flex;flex-direction:column;background:var(--beige)}
+.fm.strict{background:#fff;border:1px solid var(--txt)}
+.fm .lab{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--car);font-weight:600}
+.fm h3{font-size:26px;margin:8px 0 4px}
+.fm .price{font:700 44px/1 "Cormorant Garamond",serif;margin:14px 0 6px}
+.fm .term{font-size:14px;color:var(--mut)}
+.fm ul{list-style:none;margin:22px 0;display:grid;gap:12px;flex:1}
+.fm li{font-size:15px;padding-left:22px;position:relative}
+.fm li::before{content:"";position:absolute;left:0;top:10px;width:10px;height:1px;background:var(--car)}
+.fm li b{font-weight:600}
+.fm .res{font-size:15px;padding-top:16px;border-top:1px solid var(--line);margin-bottom:20px}
+.fm .credit{font-size:13.5px;background:var(--beige);padding:12px 14px;margin:-4px 0 20px}
+.fm .btn{width:100%}
+
+/* slider */
+.slider{margin-top:26px;position:relative}
+.track2{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:0 -20px;padding:2px 20px 6px;scroll-padding:0 20px}
+.track2::-webkit-scrollbar{display:none}
+.sl{flex:0 0 90%;scroll-snap-align:start;background:#fff;border:1px solid var(--txt);padding:26px 22px;display:flex;flex-direction:column;min-height:320px}
+.sl .q{font:700 64px/0.6 "Cormorant Garamond",serif;color:var(--car);height:30px}
+.sl .rev{font:italic 500 19px/1.5 "Cormorant Garamond",serif;color:#3a3734;flex:1}
+.sl .name{margin-top:18px;font-weight:600;font-size:15px}
+.sl .kind{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin-bottom:12px}
+.sl .case{height:110px;margin:-26px -22px 18px;background:var(--beige);position:relative;overflow:hidden}
+.sl .case svg{position:absolute;inset:0;width:100%;height:100%}
+.sl h3{font-size:22px}
+.sl .role{font-style:italic;color:var(--mut);font-size:14px;margin:4px 0 12px}
+.sl dl{font-size:14.5px;display:grid;gap:8px}
+.sl dt{font-weight:600;display:inline}
+.sl dd{display:inline}
+.ctrl{display:flex;align-items:center;justify-content:space-between;margin-top:18px}
+.dots{display:flex;gap:7px}
+.dots i{width:7px;height:7px;border-radius:50%;background:var(--line);transition:.25s}
+.dots i.on{background:var(--txt);width:22px;border-radius:4px}
+.arr{display:flex;gap:8px}
+.arr button{width:46px;height:46px;border:1px solid var(--txt);background:#fff;cursor:pointer;display:grid;place-items:center;transition:.2s}
+.arr button:hover{background:var(--txt);color:#fff}
+.arr button:disabled{opacity:.3;pointer-events:none}
+.motto{margin-top:40px;text-align:center;font:italic 600 25px/1.35 "Cormorant Garamond",serif;max-width:720px;margin-left:auto;margin-right:auto}
+
+/* faq */
+.faq{background:var(--beige)}
+.acc{margin-top:24px;border-top:1px solid #d9cfbf}
+.qa{border-bottom:1px solid #d9cfbf}
+.qa button{width:100%;text-align:left;background:none;border:0;padding:20px 40px 20px 0;font:600 16.5px/1.4 Inter;color:var(--txt);cursor:pointer;position:relative}
+.qa button::after{content:"";position:absolute;right:6px;top:50%;width:14px;height:14px;margin-top:-7px;background:linear-gradient(var(--txt),var(--txt)) center/14px 1.5px no-repeat,linear-gradient(var(--txt),var(--txt)) center/1.5px 14px no-repeat;transition:transform .3s}
+.qa.open button::after{transform:rotate(45deg)}
+.qa .a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+.qa.open .a{grid-template-rows:1fr}
+.qa .a>div{overflow:hidden}
+.qa .a p{padding:0 0 22px;color:#4a4742;font-size:16px}
+
+/* blog */
+.posts{display:grid;gap:16px;margin-top:26px}
+.post{border:1px solid var(--line);text-decoration:none;color:var(--txt);display:block;transition:border-color .25s}
+.post:hover{border-color:var(--txt)}
+.post .cv{aspect-ratio:16/10;overflow:hidden;background:var(--beige)}
+.post .cv img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.post:hover .cv img{transform:scale(1.04)}
+.post .bd{padding:20px}
+.post h3{font-size:21px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.post p{font-size:14.5px;color:var(--mut);margin-top:8px}
+.allp{margin-top:24px;text-align:center}
+
+/* final / form */
+.final{background:var(--dark);color:#fff;padding:0;position:relative;overflow:hidden}
+.final .bgp{position:relative;height:330px}
+.final .bgp img{width:100%;height:100%;object-fit:cover;object-position:50% 15%}
+.final .bgp::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,27,24,.1),rgba(30,27,24,.65) 60%,var(--dark))}
+.final .in{position:relative;margin-top:-120px;padding-bottom:56px}
+.kick{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--car)}
+.final h2{font-size:38px;margin-top:10px;color:#fff}
+.final h2 em{color:var(--car);font-style:italic;font-weight:500}
+.final h2::after{display:none}
+.final .sub{font:italic 500 21px/1.4 "Cormorant Garamond",serif;color:#e7e1d8;margin-top:6px}
+.pts{display:grid;gap:14px;margin:24px 0}
+.pts b{display:block;font-weight:600;font-size:15.5px}
+.pts span{font-size:14px;color:#b8b1a6}
+form{display:grid;gap:12px;background:#fff;color:var(--txt);padding:24px 20px}
+form .ft{font:700 22px "Cormorant Garamond",serif}
+.fld{display:grid;gap:6px}
+.fld label{font-size:13px;color:var(--mut)}
+.fld input{height:52px;border:1px solid #d6cdbf;border-radius:4px;padding:0 14px;font:16px Inter;color:var(--txt);background:#fff;transition:border-color .2s}
+.fld input:focus{outline:0;border-color:var(--blue)}
+.fld.err input{border-color:#a3402e}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid #d6cdbf;padding:9px 12px;font-size:14px;cursor:pointer;border-radius:4px;user-select:none;transition:.2s}
+.chip.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.agree{font-size:12.5px;color:var(--mut)}
+.agree a{color:var(--blue)}
+form .btn{width:100%;margin-top:4px}
+.credit2{font-size:13px;color:#b8b1a6;margin-top:16px}
+.ok{display:none;text-align:center;padding:30px 10px}
+.ok .serif{font-size:26px;margin-bottom:8px}
+form.sent>*:not(.ok){display:none}form.sent .ok{display:block}
+
+/* footer */
+footer{background:var(--beige);padding:40px 0 110px;font-size:14px}
+footer .cols{display:grid;gap:24px}
+footer a{color:var(--txt);text-decoration:none;border-bottom:1px solid var(--line)}
+footer a:hover{border-color:var(--txt)}
+.soc{display:flex;gap:14px;flex-wrap:wrap}
+.legal{display:grid;gap:6px}
+
+/* sticky cta */
+.sticky{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;transform:translateY(150%);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.sticky.show{transform:none}
+.sticky .btn{width:100%;box-shadow:0 8px 28px rgba(31,58,95,.28)}
+
+/* demo note */
+.demo{position:fixed;top:70px;right:12px;z-index:25;background:var(--txt);color:#fff;font-size:12px;padding:7px 11px;border-radius:3px;opacity:.85}
+
+@media(min-width:760px){
+  section{padding:90px 0}
+  h1{font-size:40px}
+  .wrap{padding:0 32px}
+  .cards4{grid-template-columns:1fr 1fr}
+  .st{display:flex;flex-direction:column}
+  .found .cards{grid-template-columns:1fr 1fr;gap:16px}
+  .fc{padding:26px}
+  .fc p{font-size:14px}
+  .lvl{grid-template-columns:1fr 1fr}
+  .fmts{grid-template-columns:1fr 1fr;align-items:stretch}
+  .sl{flex-basis:calc(50% - 7px)}
+  .track2{margin:0;padding:2px 0 6px}
+  .posts{grid-template-columns:repeat(3,1fr)}
+  .outro{display:grid;grid-template-columns:1.4fr 1fr;gap:30px;align-items:center;padding:36px}
+  .outro .btn{width:auto;margin:0;justify-self:end}
+  footer .cols{grid-template-columns:1fr 1fr 1fr}
+  footer{padding-bottom:40px}
+  .sticky{display:none}
+}
+@media(min-width:1020px){
+  .nav{display:flex}
+  .hero{padding:40px 0 90px}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+  .hero .ph{margin:0;order:2;aspect-ratio:4/4.9;clip-path:polygon(6% 0,100% 0,100% 100%,0 100%)}
+  .over{margin-top:0}
+  h1{font-size:40px}
+  .hero h1{font-size:56px}
+  .hero .btn{width:auto}
+  .ticks{grid-template-columns:repeat(3,1fr)}
+  .tick{padding:18px 16px 18px 48px}.tick::before{left:16px}
+  .about .grid{grid-template-columns:.85fr 1.15fr;gap:72px;align-items:center}
+  .about .btn{width:auto}
+  .found .cards{grid-template-columns:repeat(4,1fr)}
+  .sl{flex-basis:calc(33.333% - 10px)}
+  .final .wrap{display:grid;grid-template-columns:1fr 420px;gap:60px;align-items:end}
+  .final .bgp{position:absolute;inset:0 45% 0 0;height:auto}
+  .final .bgp::after{background:linear-gradient(90deg,rgba(30,27,24,.15),rgba(30,27,24,.6) 55%,var(--dark))}
+  .final .in{margin-top:0;padding:110px 0}
+  .final .lft{padding-left:34%;align-self:center}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="demo">Демо по ТЗ</div>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#"><span class="mono">НХ</span><span><b>Надежда Хомянина</b><small>Психолог по профессиональной реализации</small></span></a>
+    <nav class="nav"><a href="#about">Обо мне</a><a href="#method">Методология</a><a href="#formats">Форматы</a><a href="#reviews">Отзывы</a><a href="#faq">Вопросы</a></nav>
+  </div>
+</header>
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="ph"><img src="img/hero.jpg" alt="Надежда Хомянина" fetchpriority="high"><span class="badge">Экс-Project Manager, MBA</span></div>
+    <div>
+      <div class="over">Надежда Хомянина • Экс-Project Manager, MBA</div>
+      <h1>Психолог по профессиональной <em>реализации</em></h1>
+      <p class="offer">Выстраиваю профессиональную реализацию как управляемый проект: от ясности в ценностях - к устойчивым результатам.</p>
+      <a class="btn" href="#form">Выстроить свою систему <svg width="18" height="12" viewBox="0 0 18 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M0 6h16M11 1l5 5-5 5"/></svg></a>
+      <div class="geo">Москва и онлайн · Индивидуальная работа</div>
+      <div class="ticks">
+        <div class="tick"><b>Системный подход</b><span>Синтез управления (MBA) и психологии.</span></div>
+        <div class="tick"><b>Экспертиза</b><span>15 лет практики. Убираю причину, а не следствие.</span></div>
+        <div class="tick"><b>Результат</b><span>От внутренних ценностей к реальным изменениям.</span></div>
+      </div>
+      <div class="formula">
+        <div class="row"><span>Психология</span><i>×</i><span>Управление</span></div>
+        <div class="track"><i></i></div>
+        <div class="steps"><span>Ценности</span><span>Стратегия</span><span>Действия</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. STATES -->
+<section class="states">
+  <div class="wrap">
+    <h2 class="reveal">Узнаете себя в одном из этих состояний?</h2>
+    <div class="cards4">
+      <div class="st reveal" data-k="операционка и делегирование"><span class="mark"></span><div class="n">01</div><h3>«Всё держится на мне»</h3><p>Вы создали своё дело, но оно превратилось в бесконечную операционку. Вы тонете в рутине, тащите всё на себе, а на стратегию и масштаб времени не остаётся. Делегировать страшно или некому, кажется: «без меня всё рухнет». И это высасывает все силы.</p></div>
+      <div class="st reveal" data-k="цена и самооценка"><span class="mark"></span><div class="n">02</div><h3>«Меня недооценивают»</h3><p>Вы много лет в рынке. У вас есть опыт, навыки, результаты. Но когда нужно назвать цену - вы теряетесь. Вам неловко просить больше, чем у других. И соглашаетесь на меньшее, хотя знаете, что стоите большего. В итоге доход не соответствует тому, что вы реально умеете.</p></div>
+      <div class="st reveal" data-k="смена профессии без потери опоры"><span class="mark"></span><div class="n">03</div><h3>«Хочу перемен, но страшно»</h3><p>Вы хотите сменить профессию или выйти из найма, но страх потерять стабильность и статус парализует. Вы застряли между чужими ожиданиями и желанием жить свою жизнь. И не знаете, с какого шага начать, чтобы не разрушить всё.</p></div>
+      <div class="st reveal" data-k="смысл и собственный путь"><span class="mark"></span><div class="n">04</div><h3>«Я потерял смысл»</h3><p>Вы достигли высот, о которых многие мечтают. Но радости это не приносит. Внешне всё успешно: работа, доход, статус. А внутри - усталость и пустота. Ощущение, что вы живёте не свою жизнь, а играете чужую роль.</p></div>
+    </div>
+    <div class="hint">Отметьте, что про вас, - запрос подставится в заявку.</div>
+    <div class="outro reveal">
+      <div>
+        <div class="serif">Но это не тупик. Это точка, в которой начинается система.</div>
+        <p>Спроектируем ваше направление, выстроим стратегию и превратим разрозненные задачи в управляемый план действий.</p>
+        <div class="sel" id="sel"></div>
+      </div>
+      <a class="btn" href="#form">Выстроить свою систему</a>
+    </div>
+  </div>
+</section>
+
+<!-- 3. ABOUT -->
+<section class="about" id="about">
+  <div class="wrap grid">
+    <div class="ph reveal"><img src="img/about.jpg" alt="Надежда Хомянина" loading="lazy"></div>
+    <div class="reveal">
+      <h2>Обо мне</h2>
+      <h3>Надежда Хомянина</h3>
+      <div class="who" style="margin-top:4px">Психолог по профессиональной реализации</div>
+      <ul class="reg">
+        <li>MBA, Президентская программа развития предпринимательства.</li>
+        <li>Спикер Сколково, автор научных работ в сфере профессиональной реализации.</li>
+        <li>Более 15 лет практики, свыше 1000 консультаций. Опыт работы с собственниками бизнеса и топ-менеджерами.</li>
+      </ul>
+      <blockquote>«Мой метод - создать прочный фундамент из ваших истинных ценностей и возвести на нём жёсткую систему управления профессиональной реализацией. Результат - ваши внутренние смыслы превращаются в чёткую стратегию и конкретные шаги».</blockquote>
+      <a class="btn" href="#form">Выстроить свою систему</a>
+    </div>
+  </div>
+</section>
+
+<!-- 4. FOUNDATION -->
+<section class="found" style="padding-top:0">
+  <div class="wrap">
+    <h2 class="reveal">Мой профессиональный фундамент</h2>
+    <div class="cards">
+      <div class="fc reveal"><svg viewBox="0 0 32 32"><path d="M16 3l3.6 7.4 8.1 1.2-5.9 5.7 1.4 8.1L16 21.6l-7.2 3.8 1.4-8.1-5.9-5.7 8.1-1.2z"/></svg><h3>Офицер</h3><p>Военный вуз, красный диплом. Дисциплина, системность, стрессоустойчивость.</p></div>
+      <div class="fc reveal"><svg viewBox="0 0 32 32"><path d="M4 27h24M8 27V17M14 27V11M20 27V14M26 27V6"/></svg><h3>Управление (MBA)</h3><p>Проектное управление, стратегия, ресурсы, цели.</p></div>
+      <div class="fc reveal"><svg viewBox="0 0 32 32"><path d="M16 4v24M9 28h14M6 9h20M6 9l-4 9a4 4 0 008 0zM26 9l-4 9a4 4 0 008 0z"/></svg><h3>Юриспруденция</h3><p>Знание законов, медиация, защита интересов.</p></div>
+      <div class="fc reveal"><svg viewBox="0 0 32 32"><circle cx="11" cy="16" r="7"/><circle cx="21" cy="16" r="7"/></svg><h3>Психология</h3><p>Эмпатия, работа с барьерами, поддержка.</p></div>
+    </div>
+    <div class="sum reveal"><b>Управленческая система + юридические границы + офицерский стержень + психологическая глубина.</b> Это мой инструментарий, который я использую для вашего результата.</div>
+  </div>
+</section>
+
+<!-- 5. METHOD -->
+<section class="method" id="method">
+  <div class="wrap">
+    <h2 class="reveal">Методология: от ценностей к результату</h2>
+    <p class="reveal" style="max-width:760px">В основе всего - ваши ценности. Это главная опора. Если внутри ясно, то и снаружи всё складывается. Мы работаем на двух уровнях одновременно:</p>
+    <div class="venn reveal" id="venn">
+      <svg viewBox="0 0 620 380" role="img" aria-label="Два пересекающихся круга: внутренняя опора и внешние действия, в пересечении - ваши ценности">
+        <defs><clipPath id="cl"><circle cx="225" cy="190" r="170"/></clipPath></defs>
+        <circle class="c" cx="225" cy="190" r="170"/>
+        <circle class="c" cx="395" cy="190" r="170"/>
+        <circle class="lens" cx="395" cy="190" r="170" clip-path="url(#cl)"/>
+        <text class="t1" x="140" y="118" text-anchor="middle">Внутренняя</text>
+        <text class="t1" x="140" y="142" text-anchor="middle">опора</text>
+        <text class="t2" x="140" y="166" text-anchor="middle">устойчивость и зрелость</text>
+        <text class="t2" x="140" y="181" text-anchor="middle">решений</text>
+        <g><text class="pain" x="140" y="215" text-anchor="middle">Тревога</text><line class="strike" x1="112" y1="211" x2="168" y2="211"/></g>
+        <g><text class="pain" x="140" y="235" text-anchor="middle">Неуверенность</text><line class="strike" x1="98" y1="231" x2="182" y2="231"/></g>
+        <g><text class="pain" x="140" y="255" text-anchor="middle">Страхи</text><line class="strike" x1="116" y1="251" x2="164" y2="251"/></g>
+        <g><text class="pain" x="140" y="275" text-anchor="middle">Прокрастинация</text><line class="strike" x1="94" y1="271" x2="186" y2="271"/></g>
+        <text class="t1" x="480" y="118" text-anchor="middle">Внешние</text>
+        <text class="t1" x="480" y="142" text-anchor="middle">действия</text>
+        <text class="t2" x="480" y="166" text-anchor="middle">управляемая система,</text>
+        <text class="t2" x="480" y="181" text-anchor="middle">прогнозируемый рост</text>
+        <g><text class="pain" x="480" y="215" text-anchor="middle">Хаос в делах</text><line class="strike" x1="440" y1="211" x2="520" y2="211"/></g>
+        <g><text class="pain" x="480" y="235" text-anchor="middle">Перегруз операционкой</text><line class="strike" x1="414" y1="231" x2="546" y2="231"/></g>
+        <g><text class="pain" x="480" y="255" text-anchor="middle">Нет стратегии</text><line class="strike" x1="438" y1="251" x2="522" y2="251"/></g>
+        <g><text class="pain" x="480" y="275" text-anchor="middle">Нет сильной команды</text><line class="strike" x1="420" y1="271" x2="540" y2="271"/></g>
+        <text class="core" x="310" y="184" text-anchor="middle">ВАШИ</text>
+        <text class="core" x="310" y="202" text-anchor="middle">ЦЕННОСТИ</text>
+      </svg>
+    </div>
+    <div class="lvl">
+      <div class="lv reveal"><small>Круг 1 · внутренний уровень</small><h3>Внутренняя устойчивость и зрелость решений</h3><div class="pains"><s>Тревога</s> · <s>Неуверенность</s> · <s>Страхи</s> · <s>Прокрастинация</s> · <s>Постоянное напряжение</s></div></div>
+      <div class="lv reveal"><small>Круг 2 · внешний уровень</small><h3>Управляемая система, прогнозируемый рост и масштаб</h3><div class="pains"><s>Хаос в делах</s> · <s>Перегруз операционкой</s> · <s>Нет стратегии</s> · <s>Нет времени на рост</s> · <s>Нет сильной команды</s></div></div>
+    </div>
+    <div class="eq reveal">Внутренняя опора + внешние действия</div>
+  </div>
+</section>
+
+<!-- 6. FORMATS -->
+<section id="formats">
+  <div class="wrap">
+    <h2 class="reveal">Форматы работы</h2>
+    <p class="reveal" style="max-width:760px">Работаю адресно, под конкретную задачу. Начинаем с диагностики - это позволяет объективно оценить текущую ситуацию и определить вектор движения.</p>
+    <div class="fmts">
+      <div class="fm reveal">
+        <div class="lab">Начало работы</div>
+        <h3>Диагностическая встреча</h3>
+        <div class="price">10 000 ₽</div>
+        <div class="term">1 встреча • до 2 часов</div>
+        <ul>
+          <li><b>Аудит текущей ситуации.</b> Где вы сейчас, какие активы работают, а какие тормозят.</li>
+          <li><b>Инвентаризация ресурсов.</b> Компетенции, связи, время и внешние возможности.</li>
+          <li><b>Карта ограничений.</b> Внутренние барьеры и слепые зоны, которые мешают росту.</li>
+          <li><b>План на месяц.</b> Чёткие шаги с приоритетами.</li>
+          <li><b>Итоговый документ.</b> Резюме с выводами и стратегией остаётся у вас.</li>
+        </ul>
+        <div class="res">Диагностика - это уже результат. Вы получаете объективную картину и конкретный план действий.</div>
+        <a class="btn" href="#form" data-f="Диагностика">Записаться на диагностику</a>
+      </div>
+      <div class="fm strict reveal">
+        <div class="lab">Глубокая работа</div>
+        <h3>Индивидуальное сопровождение</h3>
+        <div class="price">60 000 ₽</div>
+        <div class="term">1,5 месяца • 6 встреч по 1,5 часа + поддержка в чате</div>
+        <ul>
+          <li><b>Стратегия перехода.</b> Декомпозиция цели на шаги с дедлайнами и точками контроля.</li>
+          <li><b>Внешний контур.</b> Система, поддержка и обратная связь, чтобы вы не сошли с дистанции.</li>
+          <li><b>Работа с ограничениями.</b> Убираем внутренние барьеры и саботаж.</li>
+          <li><b>Позиционирование.</b> Как заявить о своей экспертизе, чтобы повысить чек и укрепить репутацию.</li>
+        </ul>
+        <div class="res"><b>Результат:</b> готовая стратегия роста, новая архитектура работы и чёткое понимание направления.</div>
+        <div class="credit">Если вы уже прошли диагностику, её стоимость (10 000 ₽) засчитывается - доплата 50 000 ₽.</div>
+        <a class="btn sec" href="#form" data-f="Сопровождение">Обсудить сопровождение</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. REVIEWS + CASES -->
+<section id="reviews" style="padding-top:0">
+  <div class="wrap">
+    <h2 class="reveal">Отзывы и проекты</h2>
+    <div class="slider reveal">
+      <div class="track2" id="tr">
+        <article class="sl"><div class="kind">Отзыв</div><div class="q">“</div><p class="rev">Надежда помогла разложить всё по полочкам. Получила не просто совет, а чёткий алгоритм: как продвигать себя и искать клиентов. Всё структурно, без воды. Спасибо за системный подход и уверенность в действиях!</p><div class="name">Ольга</div></article>
+        <article class="sl"><div class="kind">Отзыв</div><div class="q">“</div><p class="rev">Спасибо за консультацию! Всё структурно и понятно. Наконец-то у меня есть пошаговый план: что делать первым, что вторым. Начала действовать сразу. Отдельное спасибо за пакет материалов после встречи - это экономит недели!</p><div class="name">Юлия</div></article>
+        <article class="sl"><div class="kind">Отзыв</div><div class="q">“</div><p class="rev">Обратилась к Надежде за помощью с сайтом для запуска своего проекта. Сделали всё в срок, все пожелания учтены. Сейчас у меня успешный бизнес - Надежда стала отличным началом этого пути!</p><div class="name">Елена Коротких</div></article>
+        <article class="sl"><div class="case"><svg viewBox="0 0 300 110" preserveAspectRatio="xMidYMid slice"><g fill="none" stroke="#C9A87C" stroke-width="1.2"><rect x="40" y="30" width="60" height="40"/><rect x="120" y="20" width="60" height="40"/><rect x="200" y="40" width="60" height="40"/><path d="M100 50h20M180 45l20 10"/></g></svg></div><div class="kind">Кейс</div><h3>GetHelpers.ru</h3><div class="role">Моя роль: методолог, архитектор продукта</div><dl><div><dt>Задача: </dt><dd>систематизировать идеи и разработать структуру образовательного продукта под запрос рынка.</dd></div><div><dt>Решение: </dt><dd>анализ аудитории, архитектура и методология курса.</dd></div><div><dt>Результат: </dt><dd>готовая программа с подтверждённой актуальностью, продукт укомплектован для запуска.</dd></div></dl></article>
+        <article class="sl"><div class="case"><svg viewBox="0 0 300 110" preserveAspectRatio="xMidYMid slice"><g fill="none" stroke="#C9A87C" stroke-width="1.2"><path d="M60 90V40l40-20 40 20v50M140 90V40l40-20 40 20v50"/><circle cx="100" cy="55" r="10"/><circle cx="180" cy="55" r="10"/></g></svg></div><div class="kind">Кейс</div><h3>«Актёрская Академия»</h3><div class="role">Моя роль: стратег, маркетинг</div><dl><div><dt>Задача: </dt><dd>создать систему для роста продукта без постоянного участия собственника.</dd></div><div><dt>Решение: </dt><dd>переупаковала продукт, выстроила маркетинг.</dd></div><div><dt>Результат: </dt><dd>процессы формализованы и автоматизированы.</dd></div></dl></article>
+        <article class="sl"><div class="case"><svg viewBox="0 0 300 110" preserveAspectRatio="xMidYMid slice"><g fill="none" stroke="#C9A87C" stroke-width="1.2"><circle cx="150" cy="55" r="12"/><circle cx="90" cy="35" r="8"/><circle cx="210" cy="35" r="8"/><circle cx="90" cy="80" r="8"/><circle cx="210" cy="80" r="8"/><path d="M98 38l40 12M202 38l-40 12M98 77l40-15M202 77l-40-15"/></g></svg></div><div class="kind">Кейс</div><h3>Онлайн-школа омоложения</h3><div class="role">Моя роль: бизнес-архитектор</div><dl><div><dt>Задача: </dt><dd>масштабировать проект и убрать ручное управление.</dd></div><div><dt>Решение: </dt><dd>описала бизнес-процессы, разработала материалы, выстроила структуру.</dd></div><div><dt>Результат: </dt><dd>команда сформирована, процессы работают автономно, проект вышел на новый уровень.</dd></div></dl></article>
+        <article class="sl"><div class="case"><svg viewBox="0 0 300 110" preserveAspectRatio="xMidYMid slice"><g fill="none" stroke="#C9A87C" stroke-width="1.2"><path d="M150 20v30M150 50L90 80M150 50l60 30M150 50v35"/><rect x="138" y="10" width="24" height="16"/><rect x="76" y="80" width="28" height="16"/><rect x="136" y="85" width="28" height="16"/><rect x="196" y="80" width="28" height="16"/></g></svg></div><div class="kind">Кейс</div><h3>Classkid</h3><div class="role">Моя роль: архитектор системы управления</div><dl><div><dt>Задача: </dt><dd>подготовить проект к масштабированию.</dd></div><div><dt>Решение: </dt><dd>спроектировала партнёрскую сеть и архитектуру управления.</dd></div><div><dt>Результат: </dt><dd>процессы выстроены, система готова к росту. Спикер Сколково.</dd></div></dl></article>
+      </div>
+      <div class="ctrl"><div class="dots" id="dots"></div><div class="arr"><button id="pv" aria-label="Назад"><svg width="18" height="12" viewBox="0 0 18 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6H2M7 1L2 6l5 5"/></svg></button><button id="nx" aria-label="Вперёд"><svg width="18" height="12" viewBox="0 0 18 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M0 6h16M11 1l5 5-5 5"/></svg></button></div></div>
+    </div>
+    <p class="motto reveal">«Ваша профессиональная реализация - это не случайность. Это система, которую можно выстроить».</p>
+  </div>
+</section>
+
+<!-- 8. FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap" style="max-width:900px">
+    <h2 class="reveal">Частые вопросы</h2>
+    <div class="acc" id="acc"></div>
+  </div>
+</section>
+
+<!-- 9. POSTS -->
+<section>
+  <div class="wrap">
+    <h2 class="reveal">Публикации</h2>
+    <div class="posts">
+      <a class="post reveal" href="#"><div class="cv"><img src="img/hero.jpg" alt="" loading="lazy" style="object-position:50% 20%"></div><div class="bd"><h3>Почему опытные специалисты продают себя дешевле, чем стоят</h3><p>Три внутренних барьера и как их убрать.</p></div></a>
+      <a class="post reveal" href="#"><div class="cv"><img src="img/about.jpg" alt="" loading="lazy" style="object-position:50% 25%"></div><div class="bd"><h3>Выход из найма как проект: план на 90 дней без потери опоры</h3><p>Чек-лист перехода по этапам.</p></div></a>
+      <a class="post reveal" href="#"><div class="cv"><img src="img/final.jpg" alt="" loading="lazy" style="object-position:50% 30%"></div><div class="bd"><h3>«Всё держится на мне»: как собственнику вернуть время на стратегию</h3><p>Делегирование без страха потерять контроль.</p></div></a>
+    </div>
+    <div class="allp"><a class="btn" href="#">Все публикации</a></div>
+  </div>
+</section>
+
+<!-- 10. FINAL + FORM -->
+<section class="final" id="form">
+  <div class="bgp"><img src="img/final.jpg" alt=""></div>
+  <div class="wrap in">
+    <div class="lft">
+      <div class="kick">Следующий шаг</div>
+      <h2>Следующий выпуск - <em>о вас</em></h2>
+      <p class="sub">Диагностическая встреча: разберём, что мешает, и наметим, как это изменить.</p>
+      <div class="pts">
+        <div><b>Карта ценностей и зон роста</b><span>остаётся у вас</span></div>
+        <div><b>Онлайн, в удобное время</b><span>Zoom - из любой точки мира</span></div>
+        <div><b>Конфиденциально</b><span>без шаблонов - под вашу задачу</span></div>
+      </div>
+      <p class="credit2">Стоимость диагностики 10 000 ₽ засчитывается в сопровождение.</p>
+    </div>
+    <form id="f" novalidate>
+      <div class="ft">Записаться</div>
+      <div class="chips" id="fmt"><span class="chip on">Диагностика</span><span class="chip">Сопровождение</span></div>
+      <div class="fld"><label for="nm">Имя</label><input id="nm" autocomplete="name"></div>
+      <div class="fld"><label for="ph">Телефон *</label><input id="ph" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__"></div>
+      <div class="fld"><label for="em">Email - по желанию</label><input id="em" type="email" inputmode="email" autocomplete="email"></div>
+      <div class="agree">Нажимая кнопку, вы даёте <a href="#">согласие на обработку персональных данных</a> и принимаете <a href="#">политику конфиденциальности</a>.</div>
+      <button class="btn" type="submit">Отправить заявку</button>
+      <div class="ok"><div class="serif">Спасибо!</div><p>Я получила вашу заявку и свяжусь с вами в ближайшее время.</p></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap cols">
+    <div>© Надежда Хомянина, 2026.<br><span class="mut">Психолог по профессиональной реализации.</span></div>
+    <div class="soc"><a href="#">ВКонтакте</a><a href="#">Дзен</a><a href="#">TenChat</a></div>
+    <div class="legal"><a href="#" style="justify-self:start">почта@пример.ru</a><a href="#" style="justify-self:start">Политика конфиденциальности</a><a href="#" style="justify-self:start">Согласие на обработку персональных данных</a></div>
+  </div>
+</footer>
+
+<div class="sticky" id="stk"><a class="btn" href="#form">Записаться</a></div>
+
+<script>
+addEventListener('load',()=>document.body.classList.add('loaded'));
+setTimeout(()=>document.body.classList.add('loaded'),600);
+const top_=document.getElementById('top');
+addEventListener('scroll',()=>{top_.classList.toggle('sc',scrollY>10)},{passive:true});
+
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const venn=document.getElementById('venn');
+new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)setTimeout(()=>venn.classList.add('go'),500)}),{threshold:.5}).observe(venn);
+
+// states -> request
+const sel=document.getElementById('sel');let picked=[];
+document.querySelectorAll('.st').forEach(c=>c.addEventListener('click',()=>{c.classList.toggle('on');
+  picked=[...document.querySelectorAll('.st.on')].map(x=>x.dataset.k);
+  sel.textContent=picked.length?'Ваш запрос: '+picked.join(', ')+'. Разберём на диагностике.':''}));
+
+// slider
+const tr=document.getElementById('tr'),sl=[...tr.children],dots=document.getElementById('dots');
+sl.forEach((_,i)=>{const d=document.createElement('i');d.onclick=()=>go(i);dots.append(d)});
+function step(){return sl[1].offsetLeft-sl[0].offsetLeft}
+function idx(){return Math.round(tr.scrollLeft/step())}
+function go(i){tr.scrollTo({left:i*step(),behavior:'smooth'})}
+function upd(){const i=idx(),max=tr.scrollWidth-tr.clientWidth;[...dots.children].forEach((d,k)=>d.classList.toggle('on',k===i));pv.disabled=tr.scrollLeft<4;nx.disabled=tr.scrollLeft>max-4}
+pv.onclick=()=>go(Math.max(0,idx()-1));nx.onclick=()=>go(idx()+1);
+tr.addEventListener('scroll',upd,{passive:true});upd();
+
+// faq
+const F=[["Чем ваш подход отличается от психотерапии?","Традиционная психотерапия часто работает с прошлым и эмоциональным состоянием. Мой подход - это прикладная работа с настоящим и будущим. Как психолог, я помогаю справиться с выгоранием и страхами. Как управленец - помогаю выстроить бизнес-процессы, позиционирование и стратегию. Мы работаем с вашей реальностью (карьера, бизнес, доход)."],
+["Чем ваш подход отличается от бизнес-коучинга?","Коучинг часто ограничивается постановкой целей и мотивацией. Мой метод глубже: мы убираем внутренние барьеры (саботаж, страхи, ограничивающие убеждения), которые мешают вам двигаться. И только потом подкрепляем это системным проектным подходом. Мы создаём архитектуру, в которой вы сможете достичь целей без выгорания."],
+["Сколько длится работа?","Формат зависит от вашего запроса. Обычно мы встречаемся раз в неделю. Это может быть одна диагностическая встреча (до 2 часов) или глубокое сопровождение в течение 1,5 месяцев (6 встреч). Мы не растягиваем процесс искусственно, но и не обещаем «волшебную таблетку» за один день."],
+["Что я получу уже после первой (диагностической) встречи?","Ясность и структуру. Вы увидите, где находитесь сейчас, выявите свои ключевые барьеры, определите точки опоры и получите маршрут первых шагов на 2-3 недели. Это не обязательство, а профессиональный аудит вашей ситуации."],
+["Могу ли я обратиться, если у меня нет чёткого запроса?","Конечно. Диагностическая встреча как раз для того и нужна, чтобы сформулировать запрос. Мы разберём вашу ситуацию и поймём, куда именно двигаться дальше. Часто клиенты приходят с ощущением «что-то не так», а на встрече мы находим истинную причину."],
+["Подходит ли ваш метод, если я не в Москве?","Да. Я работаю онлайн по всему миру. Все сессии проходят в Zoom с видеосвязью - это обеспечивает максимальное включение и эффект живого присутствия, независимо от вашей географии."],
+["Помогаете ли вы с мерами поддержки и грантами?","Да, я ориентируюсь в акселераторах, грантах и мерах поддержки. Имею опыт участия в конференциях и выступаю спикером в Сколково. Если вам нужен не только психологический разбор, но и управленческая стратегия с учётом внешних ресурсов - мы учтём это."],
+["Вы гарантируете результат?","Я гарантирую профессиональную экспертизу, систему, инструменты и жёсткий контроль на каждом этапе. Но результат - это всегда совместная работа. Мы вместе выстраиваем маршрут, но пройти по нему и внедрить изменения предстоит вам. Я работаю с теми, кто настроен на реальные действия."],
+["Как происходит оплата? Возможна ли рассрочка?","Оплата производится за диагностическую встречу или за весь этап индивидуального сопровождения. При необходимости мы можем обсудить удобный для вас формат оплаты."]];
+const acc=document.getElementById('acc');
+F.forEach(([q,a])=>{const d=document.createElement('div');d.className='qa';d.innerHTML=`<button aria-expanded="false">${q}</button><div class="a"><div><p>${a}</p></div></div>`;
+  d.firstChild.onclick=()=>{const o=d.classList.toggle('open');d.firstChild.setAttribute('aria-expanded',o)};acc.append(d)});
+
+// form
+const fmt=document.getElementById('fmt');
+fmt.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{fmt.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));c.classList.add('on')});
+document.querySelectorAll('[data-f]').forEach(b=>b.addEventListener('click',()=>{fmt.querySelectorAll('.chip').forEach(x=>x.classList.toggle('on',x.textContent===b.dataset.f))}));
+const ph=document.getElementById('ph');
+ph.addEventListener('input',()=>{let d=ph.value.replace(/\D/g,'');if(d[0]==='8')d='7'+d.slice(1);if(d&&d[0]!=='7')d='7'+d;d=d.slice(0,11);
+  let s='+7';if(d.length>1)s+=' ('+d.slice(1,4);if(d.length>=4)s+=') '+d.slice(4,7);if(d.length>=7)s+='-'+d.slice(7,9);if(d.length>=9)s+='-'+d.slice(9,11);ph.value=d?s:''});
+document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();const ok=ph.value.replace(/\D/g,'').length===11;
+  ph.parentElement.classList.toggle('err',!ok);if(!ok){ph.focus();return}
+  // В рабочей версии: отправка в Яндекс.Формы / вебхук -> почта + MAX
+  e.target.classList.add('sent')});
+
+// sticky cta
+const stk=document.getElementById('stk'),hero=document.querySelector('.hero .btn'),form=document.getElementById('form');
+let heroGone=false,formIn=false;
+new IntersectionObserver(es=>{heroGone=!es[0].isIntersecting&&es[0].boundingClientRect.top<0;tg()}).observe(hero);
+new IntersectionObserver(es=>{formIn=es[0].isIntersecting;tg()},{threshold:.15}).observe(form);
+function tg(){stk.classList.toggle('show',heroGone&&!formIn)}
+</script>
+</body>
+</html>
